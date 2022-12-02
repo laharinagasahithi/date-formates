@@ -1,0 +1,12 @@
+declare @Existingdate datetime
+Set @Existingdate=GETDATE()
+Select CONVERT(varchar,@Existingdate,5) as [DD-MM-YY]
+
+
+declare @Existingdate datetime
+Set @Existingdate=GETDATE()
+Select CONVERT(varchar,@Existingdate,6) as [DD MMM YY]
+
+declare @Existingdate datetime
+Set @Existingdate=GETDATE()
+Select CONVERT(varchar,@Existingdate,1) as [MM/DD/YY]
